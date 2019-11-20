@@ -13,6 +13,13 @@
 		B05FFD7C238277A40060D61E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B05FFD7A238277A40060D61E /* Main.storyboard */; };
 		B05FFD7E238277A60060D61E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B05FFD7D238277A60060D61E /* Assets.xcassets */; };
 		B05FFD81238277A60060D61E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B05FFD7F238277A60060D61E /* LaunchScreen.storyboard */; };
+		B05FFDB323827A910060D61E /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05FFDB223827A910060D61E /* CalendarViewController.swift */; };
+		B0F4343323853A1400B96297 /* CalendarCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F4342E23853A1400B96297 /* CalendarCollectionViewLayout.swift */; };
+		B0F4343423853A1400B96297 /* CalenderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F4342F23853A1400B96297 /* CalenderViewModel.swift */; };
+		B0F4343523853A1400B96297 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F4343023853A1400B96297 /* Models.swift */; };
+		B0F4343623853A1400B96297 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F4343123853A1400B96297 /* Protocols.swift */; };
+		B0F4343723853A1400B96297 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F4343223853A1400B96297 /* CalendarView.swift */; };
+		B0F4343A23853A9E00B96297 /* CalendarItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F4343923853A9E00B96297 /* CalendarItemCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		B05FFD7D238277A60060D61E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B05FFD80238277A60060D61E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B05FFD82238277A60060D61E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B05FFDB223827A910060D61E /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		B0F4342E23853A1400B96297 /* CalendarCollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarCollectionViewLayout.swift; sourceTree = "<group>"; };
+		B0F4342F23853A1400B96297 /* CalenderViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalenderViewModel.swift; sourceTree = "<group>"; };
+		B0F4343023853A1400B96297 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		B0F4343123853A1400B96297 /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		B0F4343223853A1400B96297 /* CalendarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		B0F4343923853A9E00B96297 /* CalendarItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarItemCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,8 @@
 		B05FFD73238277A40060D61E /* Calendar */ = {
 			isa = PBXGroup;
 			children = (
+				B0F4343823853A6600B96297 /* CalendarController */,
+				B0F4342D23853A1400B96297 /* CalendarView */,
 				B05FFD74238277A40060D61E /* AppDelegate.swift */,
 				B05FFD76238277A40060D61E /* SceneDelegate.swift */,
 				B05FFD78238277A40060D61E /* ViewController.swift */,
@@ -65,6 +81,27 @@
 				B05FFD82238277A60060D61E /* Info.plist */,
 			);
 			path = Calendar;
+			sourceTree = "<group>";
+		};
+		B0F4342D23853A1400B96297 /* CalendarView */ = {
+			isa = PBXGroup;
+			children = (
+				B0F4342E23853A1400B96297 /* CalendarCollectionViewLayout.swift */,
+				B0F4342F23853A1400B96297 /* CalenderViewModel.swift */,
+				B0F4343023853A1400B96297 /* Models.swift */,
+				B0F4343123853A1400B96297 /* Protocols.swift */,
+				B0F4343223853A1400B96297 /* CalendarView.swift */,
+			);
+			path = CalendarView;
+			sourceTree = "<group>";
+		};
+		B0F4343823853A6600B96297 /* CalendarController */ = {
+			isa = PBXGroup;
+			children = (
+				B05FFDB223827A910060D61E /* CalendarViewController.swift */,
+				B0F4343923853A9E00B96297 /* CalendarItemCell.swift */,
+			);
+			path = CalendarController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +175,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0F4343323853A1400B96297 /* CalendarCollectionViewLayout.swift in Sources */,
+				B05FFDB323827A910060D61E /* CalendarViewController.swift in Sources */,
+				B0F4343423853A1400B96297 /* CalenderViewModel.swift in Sources */,
 				B05FFD79238277A40060D61E /* ViewController.swift in Sources */,
+				B0F4343A23853A9E00B96297 /* CalendarItemCell.swift in Sources */,
 				B05FFD75238277A40060D61E /* AppDelegate.swift in Sources */,
+				B0F4343723853A1400B96297 /* CalendarView.swift in Sources */,
 				B05FFD77238277A40060D61E /* SceneDelegate.swift in Sources */,
+				B0F4343523853A1400B96297 /* Models.swift in Sources */,
+				B0F4343623853A1400B96297 /* Protocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +260,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +314,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -285,7 +329,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = K4E3UMAP3N;
+				DEVELOPMENT_TEAM = G55QJCJLG9;
 				INFOPLIST_FILE = Calendar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -303,7 +347,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = K4E3UMAP3N;
+				DEVELOPMENT_TEAM = G55QJCJLG9;
 				INFOPLIST_FILE = Calendar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
